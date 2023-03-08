@@ -5,10 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      .container {
+        margin: 100px;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: width 2s;
+        cursor: pointer;
+      }
+
+      .box:hover {
+        width: 300px;
+      }
+    </style>
   </head>
   <body>
     <a href="/"> Go to Home </a>
 
-    <div></div>
+    <div class="container">
+      <h1>The Transition Property</h1>
+      <p>Hover over the div element below, to see the transition effect:</p>
+      <div class="box"></div>
+    </div>
   </body>
 </html>
